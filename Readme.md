@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Vlad Kuts](https://up.htmlacademy.ru/htmlcss/30/user/1592315).
-* Наставник: `Маргарита Попова`.
+* Наставник: [Маргарита Попова](https://htmlacademy.ru/profile/id230166).
 
 ---
 
