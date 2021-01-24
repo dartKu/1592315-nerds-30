@@ -14,85 +14,93 @@
                 <img src="img/nerds-logo.svg" alt="Логотип Нердс">
             </a>
             <ul>
-                <li>
-                    <a href="index.html">Студия</a>
-                </li>
-                <li>
-                    <a href="#">Клиенты</a>
-                </li>
-                <li>
-                    <a href="#">Магазин</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
+                <li> <a href="index.html">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
+            <a href="#">
+                <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Корзина"></a>
             <a href="#">Корзина</a>
+
         </nav>
     </header>
     <main>
         <section>
             <div>
-                <p>Магазин готовых шаблонов</p>
-            </div>
-        </section>
-        <section>
-            <h2>Фильтр поиска</h2>
-            <div>
-                <p>Сортировать:</p>
-                <a href="#">Цене</a>
-                <a href="#">Типу</a>
-                <a href="#">Названию</a>
+                <h1>Магазин готовых шаблонов</h>
             </div>
         </section>
         <secton>
-            <h2>Формы</h2>
+            <h2>Фильтр товаров</h2>
             <div>
-                <p>Стоимость:</p>
-                <ul>
-                    <li><input type="range" min="1" max="15000" step="500" value="7500"></li>
-                    <li><label for="subscribe-field">От</label><input type="namber" min="1" max="15000">
-                        <label for="subscribe-field">До</label><input type="namber" min="1" max="15000"></li>
-                </ul>
-                <p>Сетка:</p>
-                <ul>
-                    <li><input type="radio" name="subscribe">
-                        <label for="subscribe-field">Адаптивная</label>
-                    </li>
-                    <li><input type="radio" name="subscribe">
-                        <label for="subscribe-field">Фиксированая</label></li>
-                    <li><input type="radio" name="subscribe">
-                        <label for="subscribe-field">Резиновая</label></li>
-                </ul>
-                <p>Особености:</p>
-                <ul>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Слайдер</label>
-                    </li>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Блок приемуществ</label></li>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Новости</label></li>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Новости</label></li>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Галерея</label></li>
-                    <li><input type="checkbox" name="subscribe">
-                        <label for="subscribe-field">Корзина</label></li>
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <ul>
+                        <li><input type="range" min="1" max="15000" step="500" value="7500"></li>
+                        <li><label for="subscribe-field">От</label><input type="namber" min="1" max="15000">
+                            <label for="subscribe-field">До</label><input type="namber" min="1" max="15000"></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li><input type="radio" name="subscribe">
+                            <label for="subscribe-field">Адаптивная</label>
+                        </li>
+                        <li><input type="radio" name="subscribe">
+                            <label for="subscribe-field">Фиксированая</label></li>
+                        <li><input type="radio" name="subscribe">
+                            <label for="subscribe-field">Резиновая</label></li>
+                    </ul>
+                </fieldset>
 
-                </ul>
+                <fieldset>
+                    <legend>Особености:</legend>
+                    <ul>
+                        <li><input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Слайдер</label>
+                        </li>
+                        <li><input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Блок приемуществ</label></li>
+                        <li><input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Новости</label></li>
+                        <li><input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Новости</label></li>
+                        <li><input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Галерея</label></li>
+                        <li>
+                            <input type="checkbox" name="subscribe">
+                            <label for="subscribe-field">Корзина</label></li>
+                    </ul>
+                </fieldset>
                 <form>
                     <input type="submit" value="Показать">
                 </form>
             </div>
-
         </secton>
         <section>
-            <h2>Готовые шаблоны</h2>
+            <h2>Сотрировка</h2>
+            <div>
+                <p>Сортировать:</p>
+                <div>
+                    <ul>
+                        <li><a href="#">Цене</a></li>
+                        <li><a href="#">Типу</a></li>
+                        <li><a href="#">Названию</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Стрелка сортировки вверх"></a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Стрелка сортировки вниз"></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Каталог</h2>
             <article>
-                <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
                 <a href="#">
                     <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Седона">
                 </a>
@@ -102,56 +110,56 @@
                     <a href="# ">9 900 &#8381;</a>
                 </div>
             </article>
+            <section>
+                <h2>Слайдер</h2>
+                <div>
+                    <article>
+                        <a href="#">
+                            <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Пинк">
+                        </a>
+                        <h3><a href="#">Pink app</a></h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="# ">9 900 &#8381;</a>
+                    </article>
+                </div>
+                <article>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Пинк">
+                    </a>
+                </article>
+                <div>
+                </div>
+            </section>
             <article>
-                <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
-                <a href="#">
-                    <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Пинк">
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
                 <a href="#">
                     <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Бородинский">
                 </a>
             </article>
             <article>
                 <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
-                <a href="#">
                     <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт Мишка">
                 </a>
             </article>
             <article>
-                <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
                 <a href="#">
                     <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт  Кафедра">
                 </a>
             </article>
             <article>
                 <a href="#">
-                    <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="">
-                </a>
-                <a href="#">
                     <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Сайт  Кваст">
                 </a>
             </article>
         </section>
-        <section>
-            <h2>Переключатель страниц</h2>
-            <div><a href="#1">1</a>
-                <a href="#2">2</a>
-                <a href="#3">3</a>
-                <a href="#next">Следующая</a></div>
-        </section>
-
-
+        <h2>Пагинация</h2>
+        <div>
+            <ul>
+                <li><a>1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+                <li><a href="#next">Следующая</a></li>
+            </ul>
+        </div>
         <section>
             <h2>Контакты</h2>
             <div>
