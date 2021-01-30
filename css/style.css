@@ -1,0 +1,327 @@
+:root {
+    --basic-black: #000000;
+    --basic-extra-dark: #242424;
+    --basic-dark: #EEEEEE;
+    --basic-neutral: #e5e5e5;
+    --basic-extra-light: #f8f5f2;
+    --basic-white: #ffffff;
+    --basic-yellow: #efc84a;
+    --basic-yellow-extra: #eab534;
+    --yellow-dark: #e5a722;
+    --basic-green: #00ca74;
+    --basic-green-light: #00bc6c;
+    --basic-green-dark: #00aa62;
+    --basic-red: #e74246;
+    --basic-red-extra: #d7373b;
+    --special: #fb565a;
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
+    background-color: var(--basic-dark);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    text-decoration: none;
+}
+
+.basket a {
+    text-decoration: none;
+}
+
+.site-navigation a,
+.basket a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+    background-color: var(--basic-dark);
+}
+
+.slider {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.slide-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slide-text {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.slider a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.slider-button {
+    background-color: var(--special);
+    border-radius: 2px;
+    padding: 24px 76px;
+}
+
+.slider-button:hover {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.slider-button:active {
+    background-color: var(--basic-red-extra);
+    color: var(--basic-white);
+}
+
+.product-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.order-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.our-products a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--basic-white)
+}
+
+.order-button-first {
+    background-color: var(--special);
+    border-radius: 2px;
+    padding: 24px 76px;
+}
+
+.order-button-first:hover {
+    background-color: var(--basic-red-extra);
+    color: var(--basic-white);
+}
+
+.order-button-first:active {
+    background-color: var(--basic-red-extra);
+    color: var(--basic-white);
+}
+
+.order-button-second {
+    background-color: var(--basic-green);
+    border-radius: 2px;
+    padding: 24px 76px;
+}
+
+.order-button-second:hover {
+    background-color: var(--basic-green-light);
+    color: var(--basic-white);
+}
+
+.order-button-second:active {
+    background-color: var(--basic-green-dark);
+    color: var(--basic-white);
+}
+
+.order-button-third {
+    background-color: var(--basic-yellow);
+    border-radius: 2px;
+    padding: 24px 76px;
+}
+
+.order-button-third:hover {
+    background-color: var(--basic-yellow-extra);
+    color: var(--basic-white);
+}
+
+.order-button-third:active {
+    background-color: var(--yellow-dark);
+    color: var(--basic-white);
+}
+
+.info-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    text-transform: none;
+}
+
+.info-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.list-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.list-row {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: none;
+    list-style: none;
+}
+
+.list-advantage {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 64px;
+    text-transform: none;
+    list-style: none;
+}
+
+.list-advantage p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: none;
+    list-style: none;
+}
+
+
+/* Main footer */
+
+.main-footer {
+    color: var(--basic-black);
+    background-color: var(--basic-black);
+}
+
+.footer-contacts a {
+    color: var(--basic-white);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-contacts {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.contacts-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-address,
+.contacts-phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: none;
+    width: 230px;
+    height: 72px;
+}
+
+.contacts-button {
+    background-color: var(--special);
+    border-radius: 2px;
+    padding: 24px 76px;
+    color: var(--basic-white);
+}
+
+.contacts-button:hover,
+.contacts-button:active {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.footer-info p {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.friendship-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.footer-social li {
+    list-style: none;
+}
+
+.footer-social a {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.social-button {
+    background-color: var(--basic-dark);
+    border-radius: 35px;
+    font-size: 9px;
+    padding: 26px 9px;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.social-button:active {
+    background-color: var(--basic-red-extra);
+    color: var(--basic-white);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
