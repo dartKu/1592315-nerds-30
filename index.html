@@ -6,9 +6,9 @@
     <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
     <title>Дизайн-студия Нёрдс</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon " href="./favicon.ico ">
     <link rel="icon " href="./favicons/favicon.svg " type="image/svg+xml ">
     <link rel="icon " href="./favicons/favicon-16x16.png " type="image/png ">
@@ -42,8 +42,9 @@
             </div>
         </nav>
     </header>
-    <main class="contaier">
+    <main class="main-content">
         <section class="slider">
+            <h2>Слайдер</h2>
             <div class="slider-first">
                 <p class="slide-title">Долго, дорого, скрупулезно.</p>
                 <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -62,7 +63,7 @@
         </section>
         <section class="features ">
             <h2>Наши продукты</h2>
-            <article class="our-products">
+            <article class="product">
                 <a href="# ">
                     <img src="img/products/illustration-1.png " width="300 " height="146 " alt="Сайт ">
                 </a>
@@ -72,7 +73,7 @@
                     <a class="order-button-first" href="# ">Заказать</a>
                 </div>
             </article>
-            <article class="our-products">
+            <article class="product">
                 <a href="# ">
                     <img src="img/products/illustration-2.png " width="300 " height="146 " alt="Приложения ">
                 </a>
@@ -82,7 +83,7 @@
                     <a class="order-button-second" href="# ">Заказать</a>
                 </div>
             </article>
-            <article class="our-products ">
+            <article class="product">
                 <a href="# ">
                     <img src="img/products/illustration-3.png " width="300 " height="146 " alt="Презентация ">
                 </a>
@@ -93,20 +94,22 @@
                 </div>
             </article>
         </section>
-        <section class="row-info ">
-            <p class="info-title ">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-            <p class="info-text ">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h3 class="list-title ">Выполняем заказы на разработку:</h3>
-            <ul class="list-row ">
+        <section class="about">
+            <h2>О компани</h2>
+            <p class="about-large-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="about-text ">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="about-title ">Выполняем заказы на разработку:</h3>
+            <ul class="about-list ">
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для iOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
         </section>
         <section class="advantage ">
+            <h2>Наши приемущества</h2>
             <img class="index-logo " src="img/products/nerds-illustration.png " width="360 " height="208 " alt="Приемущества ">
             <h3 class="list-title ">с 2004 года Любим точность во всем:</h3>
-            <ul class="list-advantage ">
+            <ul class="advantage-list ">
                 <li>
                     <div>146<sup>%</sup></div>
                     <p>Уровень самоотдачи</p>
@@ -121,60 +124,63 @@
                 </li>
             </ul>
         </section>
-        <section class="partners ">
-            <div class="col ">
-                <div class="col-col1 ">
+        <section class="partners">
+            <h2>Наши партнеры</h2>
+            <div class="partners-list">
+                <div class="partners-list-item">
                     <a href="# ">
                         <img src="img/logo/logo-1.png " width="199 " height="67 " alt="HTMLAcademy ">
                     </a>
                 </div>
-                <div class="col-col1 ">
+                <div class="partners-list-item">
                     <a href="# ">
                         <img src="img/logo/logo-2.png " width="209 " height="90 " alt="Borodinsky ">
                     </a>
                 </div>
-                <div class="col-col1 ">
+                <div class="partners-list-item">
                     <a href="# ">
                         <img src="img/logo/logo-3.png " width="185 " height="52 " alt="Pink ">
                     </a>
                 </div>
-                <div class="col-col1 ">
+                <div class="partners-list-item">
                     <a href="# ">
                         <img src="img/logo/logo-4.png " width="173 " height="84 " alt="Mishka ">
                     </a>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="man-footer ">
-        <section class="footer-contacts ">
+        <section class="contacts">
+            <h2>Контакты</h2>
             <div>
                 <h3 class="contacts-title ">Nerds design studio</h3>
                 <address class="contacts-address ">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 <p class="contacts-phone ">тел. <a href="tel:+78122757575 ">+7 (812) 275-75-75</a></p>
                 <a class="contacts-button" href="#">Напишите нам</a>
             </div>
-            <img class="map " src="img/maps/map.png " width="1440 " height="416 " alt="Карта ">
+            <img class="map " src="img/maps/map.png " width="1200" height="416 " alt="Карта ">
         </section>
+    </main>
+    <footer class="main-footer ">
+        <h2>Мы в соцсетях</h2>
         <section class="footer-social ">
-            <ul>
-                <li>
+            <ul class="footer-list">
+                <li class="footer-list-item">
                     <a class="social-button" href="https://vk.com/"><img src="./img/icons/vk-icon.svg" alt="VK"></a>
                 </li>
-                <li>
+                <li class="footer-list-item">
                     <a class="social-button" href="https://www.facebook.com/">
                         <img src="./img/icons/fb-icon.svg"></a>
                 </li>
-                <li>
+                <li class="footer-list-item">
                     <a class="social-button" href="https://instagram.com/">
                         <img src="./img/icons/insta-icon.svg"></a>
                 </li>
             </ul>
         </section>
-        <section class="footer-info ">
+        <div class="footer-info ">
             <p class="friendship-title ">Давайте дружить, это выгодно!</p>
             <p class="friendship-text ">Скидка 10&#37; для друзей из социальных сетей.</p>
-        </section>
+        </div>
     </footer>
 </body>
 
