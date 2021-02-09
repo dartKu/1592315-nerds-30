@@ -21,7 +21,7 @@
     <header class="main-haeder">
         <nav class="main-navigation">
             <a class="header-logo">
-                <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
+                <img src="img/nerds-logo.svg" alt="Логотип Нердс">
             </a>
             <ul class="site-navigation">
                 <li>
@@ -40,9 +40,10 @@
             <div class="basket">
                 <a class="icon-basket" href="#">Корзина</a>
             </div>
+
         </nav>
     </header>
-    <main class="main-content">
+    <main class="main-index">
         <section class="slider">
             <h2>Слайдер</h2>
             <div class="slider-first">
@@ -63,35 +64,38 @@
         </section>
         <section class="features">
             <h2>Наши продукты</h2>
-            <article class="product">
-                <a href="#!">
-                    <img src="img/products/illustration-1.png" width="300" height="146" alt="Сайт">
-                </a>
-                <div>
-                    <h3 class="product-title">Веб-сайт</h3>
-                    <p class="product-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a class="button" href="#!">Заказать</a>
-                </div>
-            </article>
-            <article class="product">
-                <a href="#!">
-                    <img src="img/products/illustration-2.png" width="300" height="146" alt="Приложения">
-                </a>
-                <div>
-                    <h3 class="product-title">Приложения</h3>
-                    <p class=" product-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a class="button green-button" href="#!">Заказать</a>
-                </div>
-            </article>
-            <article class="product">
-                <a href="#!">
-                    <img src="img/products/illustration-3.png" width="300" height="146" alt="Презентация">
-                </a>
-                <div>
-                    <h3 class="product-title">Презентации</h3>
-                    <p class="product-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a class="button yellow-button" href="#!">Заказать</a>
-                </div>
+            <div class="product-container">
+                <article class="product">
+                    <a href="#!">
+                        <img src="img/products/illustration-1.png" alt="Сайт">
+                    </a>
+                    <div>
+                        <h3 class="product-title">Веб-сайт</h3>
+                        <p class="product-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <a class="button" href="#!">Заказать</a>
+                    </div>
+                </article>
+                <article class="product">
+                    <a href="#!">
+                        <img src="img/products/illustration-2.png" alt="Приложения">
+                    </a>
+                    <div>
+                        <h3 class="product-title">Приложения</h3>
+                        <p class=" product-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+                        <a class="button green-butto" href="#!">Заказать</a>
+                    </div>
+                </article>
+                <article class="product">
+                    <a href="#!">
+                        <img src="img/products/illustration-3.png" alt="Презентация">
+                    </a>
+                    <div>
+                        <h3 class="product-title">Презентации</h3>
+                        <p class="product-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <a class="button yellow-button" href="#!">Заказать</a>
+                    </div>
+            </div>
+
             </article>
         </section>
         <div class="company-presentation">
@@ -153,35 +157,37 @@
         </section>
         <section class="contacts">
             <h2>Контакты</h2>
-            <div>
+            <img class="contacts-map" src="img/maps/map.png" alt="Карта">
+            <div class="contact-card">
                 <h3 class="contacts-title">Nerds design studio</h3>
                 <address class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 <p class="contacts-phone">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
                 <a class="button button-contacts" href="#">Напишите нам</a>
             </div>
-            <img class="contacts-map" src="img/maps/map.png" alt="Карта">
         </section>
     </main>
     <footer class="main-footer">
         <h2>Мы в соцсетях</h2>
-        <section class="social">
-            <ul class="social-list">
-                <li class="social-item">
-                    <a class="social-button" href="https://vk.com/"><img src="./img/icons/vk-icon.svg" alt="VK"></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-button" href="https://www.facebook.com/">
-                        <img src="./img/icons/fb-icon.svg"></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-button" href="https://instagram.com/">
-                        <img src="./img/icons/insta-icon.svg"></a>
-                </li>
-            </ul>
-        </section>
-        <div class="friendship">
-            <p class="friendship-title">Давайте дружить, это выгодно!</p>
-            <p class="friendship-text">Скидка 10&#37; для друзей из социальных сетей.</p>
+        <div class="footer-container">
+            <section class="social">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-button" href="https://vk.com/"><img src="./img/icons/vk-icon.svg" alt="VK"></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="https://www.facebook.com/">
+                            <img src="./img/icons/fb-icon.svg"></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="https://instagram.com/">
+                            <img src="./img/icons/insta-icon.svg"></a>
+                    </li>
+                </ul>
+            </section>
+            <div class="friendship">
+                <p class="friendship-title">Давайте дружить, это выгодно!</p>
+                <p class="friendship-text">Скидка 10&#37; для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
 </body>
