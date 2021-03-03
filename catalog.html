@@ -64,30 +64,35 @@
                     <fieldset class="filter-forms">
                         <legend>Сетка:</legend>
                         <ul class="radio-list">
-                            <li class="radio-item"><input class="visually-hidden-filter filter-input-radio" type="radio" name="subscribe" value="adaptive">
-                                <label for="subscribe-field">Адаптивная</label>
+                            <li class="radio-item"><input class="visually-hidden filter-input-radio" type="radio" name="subscribe" id="radio">
+                                <label for="radio">Адаптивная</label>
                             </li>
-                            <li class="radio-item"><input class="visually-hidden-filter filter-input-radio" type="radio" name="subscribe" value="fixed">
-                                <label for="subscribe-field">Фиксированая</label></li>
-                            <li class="radio-item"><input class="visually-hidden-filter filter-input-radio" type="radio" name="subscribe" value="rubber">
-                                <label for="subscribe-field">Резиновая</label></li>
+                            <li class="radio-item"><input class="visually-hidden filter-input-radio" type="radio" name="subscribe" id="radio1">
+                                <label for="radio1">Фиксированная</label>
+                            </li>
+                            <li class="radio-item"><input class="visually-hidden filter-input-radio" type="radio" name="subscribe" id="radio2">
+                                <label for="radio2">Резиновая</label>
+                            </li>
                         </ul>
                     </fieldset>
                     <fieldset class="filter-specials">
                         <legend>Особености:</legend>
-                        <ul class="check-list">
-                            <li class="check-item"><input class="visually-hidden-filter filter-input-checkbox" type="checkbox" name="subscribe" value="slider">
-                                <label for="subscribe-field">Слайдер</label>
+                        <ul class="radio-list">
+                            <li class="check-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Слайдер</label>
                             </li>
-                            <li class="check-item"><input class="visually-hidden-filter filter-input-checkbox" type="checkbox" name="subscribe" value="advantage">
-                                <label for="subscribe-field">Блок приемуществ</label></li>
-                            <li class="check-item"><input class="visually-hidden-filter filter-input-checkbox" type="checkbox" name="subscribe" value="news">
-                                <label for="subscribe-field">Новости</label></li>
-                            <li class="check-item"><input class="visually-hidden-filter filter-input-checkbox" type="checkbox" name="subscribe" value="gallery">
-                                <label for="subscribe-field">Галерея</label></li>
-                            <li class="check-item">
-                                <input class="visually-hidden-filter filter-input-checkbox" type="checkbox" name="subscribe" value="trash">
-                                <label for="subscribe-field">Корзина</label></li>
+                            <li class="check-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="checkbox2">
+                                <label for="checkbox2">Блок приемуществ</label>
+                            </li>
+                            <li class="check-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="checkbox3">
+                                <label for="checkbox3">Новости</label>
+                            </li>
+                            <li class="check-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="checkbox4">
+                                <label for="checkbox4">Галерея</label>
+                            </li>
+                            <li class="check-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="checkbox5">
+                                <label for="checkbox5">Корзина</label>
+                            </li>
                         </ul>
                     </fieldset>
                     <button class="button button-catalog">Показать</button>
@@ -102,8 +107,9 @@
                         <li class="sortling-item"><a href="#">По названию</a></li>
                     </ul>
                     <div class="sortling-icon">
-                        <a class="visually-hidden-icon icon-up" href="#">up</a>
-                        <a class="visually-hidden-icon icon-down" href="#">down</a>
+                        <a class="icon-up" href="#">
+                            <span class="visually-hidden">up</span></a>
+                        <a class="icon-down" href="#"><span class="visually-hidden">down</span></a>
                     </div>
                 </section>
                 <section class="catalog">
@@ -195,7 +201,7 @@
             <p class="contacts-phone">тел. <a href="tel:+78122757575 ">+7 (812) 275-75-75</a></p>
             <a class="button button-contacts">Напишите нам</a>
         </div>
-        <img class="contacts-map" src="img/maps/map.png" alt="Карта ">
+        <img class="contacts-map" src="img/maps/map.png" width="1440" height="416" alt="Карта ">
     </section>
     <footer class="main-footer">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -203,14 +209,14 @@
             <section class="social">
                 <ul class="social-list">
                     <li class="social-item">
-                        <a class="social-button" href="https://vk.com/ "><img src="./img/icons/vk-icon.svg " alt="VK "></a>
+                        <a class="social-button" href="#!"><img src="./img/icons/vk-icon.svg" alt="VK "></a>
                     </li>
-                    <li class="social-item ">
-                        <a class="social-button " href="https://www.facebook.com/">
+                    <li class="social-item">
+                        <a class="social-button" href="#!">
                             <img src="./img/icons/fb-icon.svg "></a>
                     </li>
                     <li class="social-item">
-                        <a class="social-button " href="https://instagram.com/ ">
+                        <a class="social-button" href="#!">
                             <img src="./img/icons/insta-icon.svg "></a>
                     </li>
                 </ul>

@@ -529,6 +529,10 @@ img {
 
 /*Partners*/
 
+.partners {
+    margin-bottom: 80px;
+}
+
 .partners-container {
     display: flex;
     position: relative;
@@ -556,7 +560,7 @@ img {
 .partners-item {
     display: flex;
     position: relative;
-    width: 298px;
+    width: 25%;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -565,13 +569,13 @@ img {
 .partners-item:nth-child(n):not(:last-child)::before {
     content: "";
     position: absolute;
-    left: 283px;
+    right: 0;
     height: 52px;
     width: 2px;
     background: var(--basic-dark);
 }
 
-.partners-image-wrapper {
+.partners-image {
     display: block;
     width: 100%;
     height: auto;
@@ -580,11 +584,11 @@ img {
     opacity: 0.2;
 }
 
-.partners-image-wrapper:hover {
+.partners-image:hover {
     opacity: 1.0;
 }
 
-.partners-image-wrapper:active {
+.partners-image:active {
     opacity: 0.1;
 }
 
@@ -601,8 +605,8 @@ img {
 .contacts::before {
     content: "";
     position: absolute;
-    top: 33%;
-    left: 57%;
+    top: 29%;
+    left: 58%;
     background-image: url("../img/maps/marker.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -612,18 +616,13 @@ img {
 }
 
 .contact-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-card {
     width: 319px;
     height: 308px;
     background-color: var(--basic-white);
     position: absolute;
-    top: 28%;
-    left: 18%;
+    top: 20%;
+    left: 11%;
+    padding: 47px 50px 47px;
 }
 
 .contacts-title {
@@ -631,34 +630,33 @@ img {
     font-weight: 700;
     line-height: 30px;
     margin: 0;
-    margin-bottom: 22px;
-    margin-top: 49px;
     text-transform: uppercase;
+    padding-bottom: 22px;
 }
 
 .contacts-address {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 0;
-    margin-bottom: 18px;
     font-style: normal;
-    text-align: center;
-    width: 230px;
     color: var(--basic-font);
+    opacity: 0.6;
+    padding-bottom: 17px;
 }
 
 .contacts-phone {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 0;
-    margin-bottom: 37px;
     font-style: normal;
-    text-align: center;
     color: var(--basic-font);
+    opacity: 0.6;
+    margin: 0;
+    padding-bottom: 21px;
+    ;
 }
 
 .contacts .contacts-phone a {
     color: var(--basic-black);
+    opacity: 0.6;
 }
 
 .contacts a:hover,
@@ -669,7 +667,7 @@ img {
 .contacts-map {
     display: block;
     width: 100%;
-    margin-top: 80px;
+    min-height: 416px;
 }
 
 
@@ -677,14 +675,14 @@ img {
 
 .footer-contaier {
     display: flex;
-    height: 217px;
     justify-content: space-between;
     align-items: center;
+    padding-top: 68px;
+    padding-bottom: 68px;
 }
 
 .social {
-    display: flex;
-    width: 308px;
+    margin-right: 139px;
 }
 
 .social-list {
@@ -720,9 +718,11 @@ img {
     background-color: var(--basic-red-extra);
 }
 
+.social-button img:active {
+    opacity: 0.3;
+}
+
 .friendship {
-    display: flex;
-    flex-direction: column;
     width: 812px;
 }
 
@@ -757,6 +757,7 @@ img {
 .box-container {
     display: flex;
     margin-top: 55px;
+    margin-bottom: 80px;
 }
 
 .catalog-filter {
@@ -838,7 +839,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 fieldset label:not(.filter-price label) {
-    margin-left: 29px;
+    margin-left: 31px;
 }
 
 .filter-price label:not(:first-child) {
@@ -885,14 +886,20 @@ fieldset label:not(.filter-price label) {
     user-select: none;
 }
 
+.filter-input-radio:hover+label,
+.filter-input-radio:focus+label {
+    color: var(--basic-black);
+    opacity: 0.7;
+}
+
 .filter-input-radio+label::before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: -29px;
     top: -2px;
-    width: 21px;
-    height: 21px;
-    border: 4px solid #000000;
+    width: 22px;
+    height: 22px;
+    border: 3px solid #000000;
     border-radius: 50px;
     opacity: 0.4;
 }
@@ -900,8 +907,8 @@ fieldset label:not(.filter-price label) {
 .filter-input-radio+label::after {
     content: "";
     position: absolute;
-    left: -24px;
-    top: 3.5px;
+    left: -23px;
+    top: 4.1px;
     width: 9px;
     height: 9px;
     background-color: var(--basic-black);
@@ -910,7 +917,11 @@ fieldset label:not(.filter-price label) {
 }
 
 .filter-input-radio:checked+label::after {
-    opacity: 0.4;
+    opacity: 0.9;
+}
+
+.filter-input-radio:checked+label::before {
+    opacity: 0.9;
 }
 
 .filter-specials {
@@ -947,13 +958,14 @@ fieldset label:not(.filter-price label) {
 
 .filter-input-checkbox:hover+label,
 .filter-input-checkbox:focus+label {
-    color: var(--special);
+    color: var(--basic-black);
+    opacity: 0.7;
 }
 
 .filter-input-checkbox+label::before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: -29px;
     top: -2px;
     width: 21px;
     height: 21px;
@@ -976,7 +988,11 @@ fieldset label:not(.filter-price label) {
 }
 
 .filter-input-checkbox:checked+label::after {
-    opacity: 0.4;
+    opacity: 0.9;
+}
+
+.filter-input-checkbox:checked+label::before {
+    opacity: 0;
 }
 
 .button-catalog {
@@ -984,7 +1000,6 @@ fieldset label:not(.filter-price label) {
     padding: 17px 89px;
     color: var(--basic-black);
     font-weight: 500;
-    width: 260px;
 }
 
 .button-catalog:hover {
@@ -1019,7 +1034,6 @@ fieldset label:not(.filter-price label) {
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    padding: 0;
     margin-right: 265px;
 }
 
@@ -1086,12 +1100,13 @@ fieldset label:not(.filter-price label) {
 .icon-up::before {
     content: "";
     position: absolute;
-    top: 28%;
+    top: -4px;
     height: 10px;
     width: 11px;
     background-image: url("../img/icons/sort-down.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-left: -4px;
     opacity: 0.2;
 }
 
@@ -1103,12 +1118,13 @@ fieldset label:not(.filter-price label) {
 .icon-down::before {
     content: "";
     position: absolute;
-    top: 28%;
+    top: -4px;
     height: 10px;
     width: 11px;
     background-image: url("../img/icons/sort-up.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-left: 6px;
     opacity: 0.2;
 }
 
