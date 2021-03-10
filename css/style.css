@@ -64,19 +64,6 @@ img {
     margin: -1px;
 }
 
-.visually-hidden-filter {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .hidden {
     display: none;
 }
@@ -102,6 +89,7 @@ img {
 /*BUTTON*/
 
 .button {
+    display: inline-block;
     background-color: var(--button-color);
     padding: 16px 40px;
     line-height: 18px;
@@ -112,7 +100,6 @@ img {
     font-size: 16px;
     text-align: center;
     vertical-align: middle;
-    display: inline-block;
 }
 
 .button:hover {
@@ -121,34 +108,7 @@ img {
 
 .button:active {
     background-color: var(--button-activ-color);
-}
-
-.green-button {
-    background-color: var(--basic-green);
-}
-
-.green-button:hover {
-    background-color: var(--basic-green-light);
-}
-
-.green-button:active {
-    background-color: var(--basic-green-dark);
-}
-
-.yellow-button {
-    background-color: var(--basic-yellow);
-}
-
-.yellow-button:hover {
-    background-color: var(--basic-yellow-extra);
-}
-
-.yellow-button:active {
-    background-color: var(--yellow-dark);
-}
-
-.catalog-card-button {
-    min-width: 200px;
+    opacity: 0.3;
 }
 
 
@@ -169,16 +129,6 @@ img {
     display: block;
     width: 159px;
     height: 65px;
-}
-
-.header-logo img {
-    display: block;
-    width: 159px;
-    height: 65px;
-}
-
-.header-logo img:active {
-    opacity: 0.2;
 }
 
 .site-navigation {
@@ -222,8 +172,8 @@ img {
     pointer-events: none;
 }
 
-.basket .icon-basket {
-    padding-left: 50px;
+.basket .basket-icon {
+    padding-left: 39px;
 }
 
 .basket a {
@@ -234,23 +184,23 @@ img {
     color: var(--basic-black);
 }
 
-.basket a:hover {
+.basket :hover {
     color: var(--basic-red);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.basket a:active {
-    color: var(--basic-neutral);
+.basket :active {
+    color: var(--light-font);
 }
 
-.basket .icon-basket {
+.basket .basket-icon {
     position: relative;
 }
 
-.icon-basket::before {
+.basket-icon::before {
     content: "";
     position: absolute;
-    left: 20%;
+    left: 0;
     top: 10%;
     height: 15px;
     width: 15px;
@@ -285,14 +235,17 @@ img {
 
 .slider-first {
     background-image: url("../img/slider/nerds-index-slide1.png");
+    background-position: right;
 }
 
 .slider-second {
     background-image: url("../img/slider/nerds-index-slide2.png");
+    background-position: 100% 75%;
 }
 
 .slider-third {
     background-image: url("../img/slider/nerds-index-slide3.png");
+    background-position: right;
 }
 
 .slider-item.active {
@@ -303,6 +256,7 @@ img {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    width: 531px;
     margin: 0;
     margin-bottom: 38px;
     color: var(--basic-black);
@@ -380,6 +334,30 @@ img {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-font);
+}
+
+.green-button {
+    background-color: var(--basic-green);
+}
+
+.green-button:hover {
+    background-color: var(--basic-green-light);
+}
+
+.green-button:active {
+    background-color: var(--basic-green-dark);
+}
+
+.yellow-button {
+    background-color: var(--basic-yellow);
+}
+
+.yellow-button:hover {
+    background-color: var(--basic-yellow-extra);
+}
+
+.yellow-button:active {
+    background-color: var(--yellow-dark);
 }
 
 
@@ -555,6 +533,7 @@ img {
     width: 1120px;
     -webkit-justify-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .partners-item {
@@ -566,7 +545,7 @@ img {
     justify-content: center;
 }
 
-.partners-item:nth-child(n):not(:last-child)::before {
+.partners-item:nth-child(-n+3)::before {
     content: "";
     position: absolute;
     right: 0;
@@ -575,9 +554,21 @@ img {
     background: var(--basic-dark);
 }
 
+.partners-item:nth-child(n+5):not(:nth-child(4n)):not(:last-child)::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 52px;
+    width: 2px;
+    background: var(--basic-dark);
+}
+
+.partners-item:nth-child(n+5) {
+    margin-top: 15px;
+}
+
 .partners-image {
     display: block;
-    width: 100%;
     height: auto;
     overflow: hidden;
     object-fit: contain;
@@ -621,7 +612,7 @@ img {
     background-color: var(--basic-white);
     position: absolute;
     top: 20%;
-    left: 11%;
+    left: 21%;
     padding: 47px 50px 47px;
 }
 
@@ -651,7 +642,6 @@ img {
     opacity: 0.6;
     margin: 0;
     padding-bottom: 21px;
-    ;
 }
 
 .contacts .contacts-phone a {
@@ -716,10 +706,7 @@ img {
 
 .social-button:active {
     background-color: var(--basic-red-extra);
-}
-
-.social-button img:active {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .friendship {
@@ -1205,6 +1192,10 @@ fieldset label:not(.filter-price label) {
     color: var(--light-font);
     margin: 0;
     margin-bottom: 32px;
+}
+
+.catalog-card-button {
+    min-width: 200px;
 }
 
 
